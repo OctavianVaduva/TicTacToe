@@ -162,7 +162,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-33" />
     <option name="y" value="19" />
     <option name="width" value="1382" />
@@ -314,9 +314,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-33" y="19" width="1382" height="754" extended-state="0" />
+    <frame x="-8" y="-8" width="1376" height="754" extended-state="7" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49333334" visible="true" weight="0.17927383" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49333334" visible="true" weight="0.18009119" />
       <window_info id="Structure" order="1" sideWeight="0.5011876" side_tool="true" weight="0.15279879" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -331,7 +331,7 @@
       <window_info anchor="bottom" id="TODO" order="5" weight="0.32888147" />
       <window_info anchor="bottom" id="Version Control" order="6" weight="0.24207012" />
       <window_info anchor="bottom" id="Educational.CheckDetails" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.30050084" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.4724541" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="10" sideWeight="0.63673466" weight="0.42607313" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.3632653" side_tool="true" type="SLIDING" weight="0.07472178" />
