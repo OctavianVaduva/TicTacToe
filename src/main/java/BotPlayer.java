@@ -3,32 +3,32 @@ import java.util.Random;
 public class BotPlayer implements Playable{
 
     private String name;
-    Symbol s;
+    Symbol symbol; //simbol pe timpul jocului
 
-    public BotPlayer(String name) {
+    public BotPlayer(String name) { //Constructor jucator robot
         this.name = name;
+
     }
 
-    public int[] getCoord() {
+    public int[] getCoord() { // Propunere coordonate
         Random nr =  new Random();
-        int row = nr.nextInt(3);
-        int col = nr.nextInt(3);
+        int row = nr.nextInt(3); // Generare nr. aleatoriu [0,3)
+        int col = nr.nextInt(3); // Generare nr. aleatoriu [0,3)
 
-        return new int[]{row,col};
+        return new int[]{row,col}; // Coordonate mutare
     }
 
     public Symbol getSymbol(){
-        return s;
+        return symbol;
     }
 
-    public void setSymbol(Symbol s) {
-        this.s = s;
-
+    public void setSymbol(Symbol symbol) {
+        this.symbol = symbol;
     }
 
     @Override
     public String toString() {
         return "BotPlayer " +
-                 name + ", care a jucat cu \"" + s + "\", ";
+                 name + ", care a jucat cu \"" + symbol + "\", ";
     }
 }

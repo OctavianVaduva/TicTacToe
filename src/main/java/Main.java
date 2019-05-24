@@ -25,7 +25,7 @@ public class Main {
             r = new Referee(new Playboard(), new HumanPlayer("Gandalf", sc),
                     new BotPlayer("Bot"));
         }
-        r.start();
 
+        r.start();//derularea jocului
     }
 }
