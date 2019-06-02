@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Cursul.26_TicTacToe" />
+        <module name="cursul_26_TicTacToe" />
       </profile>
     </annotationProcessing>
   </component>
