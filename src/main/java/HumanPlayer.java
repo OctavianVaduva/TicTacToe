@@ -22,9 +22,9 @@ public class HumanPlayer implements Playable {
             }
             count+=1;
             System.out.print("Introduceti numarul liniei [1-3] ");
-            row = sc.nextInt() - 1; //Conversia coordonatelor munerice 1-3 in coordonate array 0-2
-            System.out.print("Introduceti numarul coloanei [1-3] ");
-            col = sc.nextInt() - 1; //Conversia coordonatelor munerice 1-3 in coordonate array 0-2
+            row = sc.nextInt() - 1; //Conversia coordonatelor numerice 1-3 in coordonate array 0-2
+            System.out.print("Introduceti numarul coloanei [4-6] ");
+            col = sc.nextInt() - 1 - 3; //Conversia coordonatelor numerice 4-6 in coordonate array 0-2
 
         } while (((row < 0) || (row > 2)) || ((col < 0) || (col > 2))); // se verifica incadrarea in dimensiunile tablei
 

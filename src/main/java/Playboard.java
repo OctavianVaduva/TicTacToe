@@ -2,7 +2,7 @@ public class Playboard {
 
     private Symbol[][] matrix; // dimensiune mare pentru int sau byte, asa ca folosim enum si creem o noua clasa
 
-    public Playboard() { // Constructor initializare matrice tabla de joc - toate SYMBOL_EMPTY
+    Playboard() { // Constructor initializare matrice tabla de joc - toate SYMBOL_EMPTY
         matrix = new Symbol[3][3];
         for (int row=0; row < 3; row++) {
             for (int col=0; col<3; col++) {
@@ -11,7 +11,7 @@ public class Playboard {
         }
     }
 
-    public Playboard(Symbol[][] testBoard) { // Constructor pentru facilitare testare
+    Playboard(Symbol[][] testBoard) { // Constructor pentru facilitare testare
         this.matrix = testBoard;
     }
 
@@ -36,12 +36,23 @@ public class Playboard {
     @Override
     public String toString() {
         String txt = "";
+        String txt1 = "    4   5   6\n";
+        String txt2 = "  +---+---+---+\n";
+        //txt += txt1;
         for (int row=0; row < 3; row++) {
+            txt += txt2;
             for (int col=0; col<3; col++) {
-                txt = txt + matrix[row][col] + "   ";
+                if(col == 0) {
+                    txt = txt + (row+1) + " | ";
+                }
+                if(col<2) {
+                    txt = txt + matrix[row][col] + " | ";
+                } else {
+                    txt = txt + matrix[row][col] + " | \n";
+                }
             }
-            txt = txt + "\n";
         }
+        txt = txt + txt2 +txt1;
         return txt;
     }
 

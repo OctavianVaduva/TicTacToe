@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+import static junit.framework.TestCase.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 public class TicTacToeTest {
@@ -24,9 +25,7 @@ public class TicTacToeTest {
 
     @Test
     public void stopAfterPlayingWithTwoBots() {
-        Referee r = new Referee(new Playboard(),
-                new BotPlayer("Gandalf"),
-                new BotPlayer("Dumbeldore"));
+        Referee r = new Referee(new Playboard(), new BotPlayer("Gandalf"), new BotPlayer("Dumbeldore"));
         r.start();
         assertTrue(true);
     }
@@ -40,12 +39,12 @@ public class TicTacToeTest {
             e.printStackTrace();
         }
 
-        Referee r = new Referee(new Playboard(),
-                new HumanPlayer("Gandalf", sc),
-                new HumanPlayer("Dumbeldore", sc));
+        Referee r = new Referee(new Playboard(), new HumanPlayer("Nume Jucator", sc), new HumanPlayer("Nume Jucator", sc));
+        // folosim acelasi nume, nefiind relevant
 
-        r.start();
-        //assertEquals(Symbol.SYMBOL_X, r.start()); todo de corectat egalitatea mesajului de sfarsit
+        String result = r.start();
+
+        assertEquals("Jucatorul HumanPlayer: Nume Jucator, care joaca cu \"X\",  a castigat!", result);
     }
 
 

@@ -14,7 +14,7 @@ public enum Symbol {
     SYMBOL_EMPTY{
         @Override
         public String toString() {
-            return "*";
+            return " ";
         }
     }
 }

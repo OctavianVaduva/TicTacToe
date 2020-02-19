@@ -8,7 +8,8 @@ public class Referee {
     public Referee (Playboard board, Playable PlayerA, Playable PlayerB) { //Constructor arbitru (joc)
         this.playBoard = board;
         Random r = new Random(); //Stabilire aleatoare a simbolului jucatorului
-        if(r.nextBoolean()) { //Returns the next pseudorandom, uniformly distributed
+        //Returns the next pseudorandom, uniformly distributed
+        if(r.nextBoolean()) {
             this.playWith_X = PlayerA;
             PlayerA.setSymbol(Symbol.SYMBOL_X);
             this.playWith_0 = PlayerB;
@@ -21,7 +22,7 @@ public class Referee {
         }
     }
 
-    public void start() {
+    public String start() {
         Playable currentPlayer; // variabila jucator curent, de tip Playable
         String result = "Nu exista castigator!";
 
@@ -51,9 +52,10 @@ public class Referee {
             }
             System.out.println("\n");
         }
-        System.out.println("\n===========================================================\n");
+        System.out.println("\n================================\n");
         System.out.println(playBoard); // afisam tabla la sfarsitul jocului
-        System.out.println("===========================================================");
+        System.out.println("================================");
         System.out.println(result);
+        return result;
     }
 }
